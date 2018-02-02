@@ -63,6 +63,7 @@ button:active {
   z-index: 5;
   top: -100px;
   border-top: 0px;
+  width: 100%;
 }
 #secondary-nav.active {
   transform: translateY(170px);
@@ -169,7 +170,16 @@ li.sign-out {
   border: 1px solid #909090;
   background-color: #ffffff;
 }
+.mobile-disclaimer {
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
-
+  #primary-nav,
+  #secondary-nav {
+    display: none;
+  }
+  .mobile-disclaimer {
+    display: block;
+  }
 }
